@@ -328,6 +328,30 @@ body{
 .site-footer p{ text-align:center; color:#8e8e8e; font-size:14px; }
 
 /* ---------- Responsive ---------- */
+
+@keyframes fade-up{
+    0%{
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@keyframes fade-down{
+    0%{
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
 @media (max-width:980px){
   .hero-title{ font-size:36px }
   .steps-card{ width:100%; flex-direction:row; padding:18px; }
